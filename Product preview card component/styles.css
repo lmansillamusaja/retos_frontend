@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+*/
+
+
+body{
+    
+    margin: 0;
+    background-color: hsl(30, 38%, 92%);
+    font-size: 16px;
+    
+    font-family: "Monserrat",sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    /*todo lo que esta dentro del body se llama viewport  vp*/  
+    
+    height: 100vh;
+
+
+}
+
+main{
+    
+    width: 650px;
+    min-height: 400px;
+
+    display: flex;
+
+    border-radius: 14px;
+    overflow: hidden;
+    
+}
+.photo{
+    background-color: blue;
+    width: 350px;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content{ 
+    background-color: hsl(0, 0%, 100%);
+    width: 300px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap:14px;/*da una separacion entre elementos*/
+    
+
+}
+
+.content h3{
+    margin: 0;
+    
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+.content h1{
+    margin: 0;
+    
+    font-family:"Fraunces",serif;
+    
+    font-size: 42px;
+    line-height: 1;
+    color: hsl(212, 21%, 14%);
+    
+}
+
+.content p{
+    margin: 0;
+    
+    
+    font-weight: 500;
+    
+    line-height: 1.5;
+    color: hsl(228, 12%, 48%);
+
+    
+}
+
+.content div{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    
+}
+
+.content span{
+    margin: 0;    
+    font-size: 32px;    
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);   
+    
+}
+
+.content s{
+    
+    color: hsl(158, 36%, 37%);   
+    
+}
+.content button
+{
+    border: 0;
+    font-family: inherit; /*hereda la letra de la etiqueta principal osea body*/
+    font-weight: 700;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 14px;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
